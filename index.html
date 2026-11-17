@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Cybersecurity Management Toolkit · Public Demo</title>
+<link rel="stylesheet" href="./styles.css"><script src="./app.js" defer></script>
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar" aria-label="Main navigation">
+ <div class="brand"><div class="brand-mark">◈</div><div><strong>CYBERSEC</strong><span>MANAGEMENT TOOLKIT</span></div></div>
+ <div class="side-caption">PUBLIC SHOWCASE</div>
+ <button type="button" class="nav-link selected" data-nav="overview"><span class="nav-symbol">▦</span> Overview <span class="nav-tail">⌂</span></button>
+ <div class="side-caption">SECURITY MODULES</div><nav id="module-nav" aria-label="Security modules"></nav>
+ <div class="side-footer"><div class="footer-dot"></div> Offline demo data<br><small>Sample content · not live telemetry</small></div>
+</aside>
+<main class="main">
+ <header class="topbar"><div class="breadcrumb" id="breadcrumb">Workspace / Overview</div><div class="top-actions"><span class="readonly">◉ READ-ONLY DEMO</span><a class="github-link" href="https://github.com/benatich/cybersec-management-toolkit" target="_blank" rel="noopener noreferrer">Project information ↗</a></div></header>
+ <div class="content">
+  <div class="notice"><strong>DEMONSTRATION ENVIRONMENT</strong> — All information is fictional and generated for interface evaluation. No real security assessments, monitoring or compliance claims.</div>
+  <div class="heading"><div><p class="eyebrow" id="eyebrow">SECURITY OPERATIONS / EXECUTIVE VIEW</p><h1 id="page-title">Security overview</h1><p id="page-description" class="muted">A unified view of twelve cybersecurity management disciplines.</p></div><span class="version">PUBLIC DEMO · v0.1</span></div>
+  <section id="overview-panel">
+   <div class="metric-grid" id="overview-metrics"></div>
+   <div class="section-title"><div><h2>Module portfolio</h2><p>Explore a representative read-only view of each management module.</p></div><span class="hint">12 MODULES</span></div>
+   <div class="portfolio-grid" id="portfolio"></div>
+   <div class="lower-grid"><section class="panel"><div class="panel-head"><h3>Example governance workflow</h3><span class="hint">FICTIONAL</span></div><div id="workflow"></div></section><section class="panel"><div class="panel-head"><h3>Scope and assurance</h3></div><div class="assurance"><p>✓ Isolated static showcase, no server APIs</p><p>✓ No login, telemetry or external libraries</p><p>✓ No production data or workbook exports</p><p>ℹ Displayed status is illustrative, not measured</p></div></section></div>
+  </section>
+  <section id="module-panel" hidden>
+    <div class="metric-grid" id="module-metrics"></div>
+    <div class="panel records-panel"><div class="panel-head"><div><h2 id="table-title">Records</h2><p class="muted">Synthetic records for demonstration only</p></div><div class="controls"><label for="search" class="sr-only">Search demo records</label><input id="search" type="search" placeholder="Search records…" autocomplete="off"><label for="status" class="sr-only">Filter status</label><select id="status"><option value="all">All statuses</option></select></div></div><div class="table-wrap"><table><thead id="records-head"></thead><tbody id="records-body"></tbody></table></div><div class="table-footer"><span id="record-count"></span><span>No downloads · Synthetic records only</span></div></div>
+    <section class="panel detail-panel" id="detail-panel" hidden aria-live="polite"><div class="panel-head"><h3>Record details</h3><button type="button" class="plain-button" id="close-detail">Close ×</button></div><div id="detail-content"></div></section>
+  </section>
+  <footer class="site-footer">Cybersecurity Management Toolkit · Public UI Demonstration <span>Independent synthetic showcase · Not a security product deployment</span></footer>
+ </div>
+</main></div>
+</body></html>
